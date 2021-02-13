@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    background: white;
+}
+
+
+
+header {
+    height: 800px;
+    width: 100%;
+    background: black;
+}
+header::after {
+    position: absolute;
+    content: "";
+    background: url(1.gif) no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+}
+.btn-header-container {
+    text-align: center;
+    margin-right: 225px;
+}
+#btn-header{
+    position: absolute;
+    background-size: cover;
+    margin-top: 360px;
+    z-index: 1;
+    width: 230px;
+    height: 55px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid black;
+    border-radius: 28px;
+    padding-top: 16.5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+#btn-header:hover
+{
+    color: rgba(255, 0, 0, 0.8);
+    box-shadow: 0px 0px 1000px 25px rgba(255, 0, 0, 0.8);
+}
+
+
+
+main {
+    background: url("12.gif");
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 75%;
+    background-color: white;
+}
+
+h1 {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-weight: inherit;
+}
+h1::after{
+    content: '';
+    margin: 15px auto 25px;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: red;
+}
+
+
+.content-head {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-head-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: #ff35575b;
+    margin: 20px;
+    border-radius: 5px;
+    height: 200px;
+}
+.content-head-h2:hover {
+    background: #ff002bd2;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+h3 {
+    margin: 0 auto 10px;
+    text-align: center;
+    color: red;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: inherit;
+}
+h3::before {
+    content: '';
+    margin: 25px auto 15px;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: red;
+}
+
+
+
+
+.module-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.module-1 img {
+    height: 250px;
+    width: 250px;
+}
+.module-1-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 275px;
+    height: 550px;
+    border: 4px solid #ff35575b;
+    border-radius: 5px;
+    margin: 10px;
+}
+.module-1-block:hover {
+    border: 4px solid #ff002bd2;
+}
+.scale {
+    display: inline-block;
+    overflow: hidden;
+}
+.scale img {
+    transition: 1s;
+    display: block;
+    filter: blur(0.3px);
+}
+.scale img:hover {
+    transform: scale(1.1);
+}
+h4 {
+    margin: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.module-1 p {
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+.module-1 p span {
+    color: black;
+    font-weight: bold;
+}
+
+h5 {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    text-transform: uppercase;
+    font-weight: inherit;
+}
+h5::before{
+    content: '';
+    margin: 25px auto 15px;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: red;
+}
+
+.content-footer {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-footer-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 600px;
+    border: 4px solid #ff35575b;
+    border-radius: 5px;
+    margin: 10px;
+    margin-top: 10px;
+}
+.content-footer-block:hover {
+    border: 4px solid red;
+}
+.content-footer-block img {
+    height: 200px;
+    width: 300px;
+}
+.content-footer-block p {
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+.content-footer-block p span {
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    height: 216px;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* align-self: center; */
+}
+footer::after {
+    position: absolute;
+    content: "";
+    background: url(rose.jpg) no-repeat;
+    background-position: center;
+    height: 215px;
+    width: 100%;
+}
+footer div {
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+h6 {
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    margin: 0;
+    margin-left: 20px;
+    text-align: center;
+}
+h6 span {
+    font-style: normal;
+    color: rgb(200, 0, 0);
+}
